@@ -1,4 +1,4 @@
-package main
+package segment_tree
 
 import (
 	"container/list"
