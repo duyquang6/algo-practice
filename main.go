@@ -1,6 +1,7 @@
 package main
 
 import (
+	"container/heap"
 	"container/list"
 	"crypto/rand"
 	"fmt"
@@ -212,6 +213,263 @@ func main() {
 	// 	}, func() {
 	// 		fmt.Println("observable is closed")
 	// 	})
+	// log.Println(backspaceCompare("ab#c", "ad#c"))
+	// root := &ListNode{
+	// 	Val: 1,
+	// 	Next: &ListNode{
+	// 		Val: 2,
+	// 		Next: &ListNode{
+	// 			Val: 3,
+	// 		},
+	// 	},
+	// }
+	// log.Println(splitListToParts(root, 5))
+	// year, month, _ := time.Now().Date()
+	// asiaBangkokLocation, _ := time.LoadLocation("Asia/Bangkok")
+	// startMonthTime := time.Date(year, month, 1, 0, 0, 0, 0, asiaBangkokLocation)
+	// endMonthTime := time.Date(year, month+1, 1, 0, 0, 0, 0, asiaBangkokLocation).Add(-1)
+	// log.Println(startMonthTime.UTC(), endMonthTime.UTC())
+	// nums := []int{0, 1, 1, 1, 0, 0, 1, 0, 0, 0}
+	// nums := []int{0, 1, 1}
+	// nums := []int{0, 1}
+	// log.Println(findMaxLength(nums))
+
+	// nums := []int{2, 3}
+	// log.Println(productExceptSelf(nums))
+
+	// log.Println(checkValidString("(*))"))
+	// log.Println(checkValidString("()"))
+	// log.Println(checkValidString("(*)"))
+	// tvailableFrom := int64(1587319308)
+	// availableFrom := time.Unix(tvailableFrom, 0)
+	// log.Println(availableFrom)
+	// log.Println(availableFrom.Hour()*60*60 + availableFrom.Minute()*60 + availableFrom.Second())
+	log.Println(leftMostColumnWithOne([]int{0, 1, 1, 1}))
+}
+
+func leftMostColumnWithOne(nums []int) int {
+	left, right := 0, len(nums)-1
+	mid := (left + right) / 2
+	val := 0
+	resp := -1
+	for left <= right {
+		mid = (left + right) / 2
+		val = nums[mid]
+		if left == right {
+			break
+		}
+		if val == 0 {
+			left = mid + 1
+		}
+		if val == 1 {
+			right = mid
+		}
+	}
+	if val == 1 {
+		resp = mid
+	}
+	return resp
+}
+
+func checkValidString(s string) bool {
+	if s == "" {
+		return true
+	}
+	stack := list.New()
+	stack.PushFront(s[0])
+
+	return true
+}
+
+func productExceptSelf(nums []int) []int {
+	outArr := make([]int, len(nums))
+	outArr[len(nums)-1] = nums[len(nums)-1]
+	for i := len(nums) - 2; i >= 1; i-- {
+		outArr[i] = nums[i] * outArr[i+1]
+	}
+	pLeft := 1
+	for i := 0; i < len(nums); i++ {
+		if i == len(nums)-1 {
+			outArr[i] = pLeft
+		} else {
+			outArr[i] = pLeft * outArr[i+1]
+		}
+		pLeft *= nums[i]
+	}
+	return outArr
+}
+
+func findMaxLength(nums []int) int {
+	if len(nums) == 0 {
+		return 0
+	}
+	m := map[int][]int{}
+	count := 0
+	best := 0
+	for k, v := range nums {
+		if v == 0 {
+			count--
+		}
+		if v == 1 {
+			count++
+		}
+		m[count] = append(m[count], k)
+		if count == 0 {
+			best = k + 1
+		}
+	}
+	for _, v := range m {
+		if len(v) > 1 {
+			if v[len(v)-1]-v[0] > best {
+				best = v[len(v)-1] - v[0]
+			}
+		}
+	}
+	return best
+}
+
+func splitListToParts(root *ListNode, k int) []*ListNode {
+	lenRoot := lengthRoot(root)
+	tempDiv := int(lenRoot / k)
+	tempRem := lenRoot % k
+	p := root
+	countPartition := 0
+	target := 0
+	var resp []*ListNode
+	q := p
+	for len(resp) < k {
+		if countPartition == 0 {
+			if tempRem > 0 {
+				tempRem--
+				target = tempDiv + 1
+			} else {
+				target = tempDiv
+			}
+		}
+		countPartition++
+		if countPartition == target {
+			countPartition = 0
+			resp = append(resp, q)
+			ptr := p
+			p = p.Next
+			q = p
+			ptr.Next = nil
+			continue
+		}
+		if p != nil {
+			p = p.Next
+		} else {
+			resp = append(resp, nil)
+		}
+	}
+	return resp
+}
+
+func lengthRoot(root *ListNode) int {
+	count := 0
+	p := root
+	for p != nil {
+		count++
+		p = p.Next
+	}
+	return count
+}
+
+// An Item is something we manage in a priority queue.
+type Item struct {
+	value    string // The value of the item; arbitrary.
+	priority int    // The priority of the item in the queue.
+	// The index is needed by update and is maintained by the heap.Interface methods.
+	index int // The index of the item in the heap.
+}
+
+// A PriorityQueue implements heap.Interface and holds Items.
+type PriorityQueue []*Item
+
+func (pq PriorityQueue) Len() int { return len(pq) }
+
+func (pq PriorityQueue) Less(i, j int) bool {
+	// We want Pop to give us the highest, not lowest, priority so we use greater than here.
+	if pq[i].priority == pq[j].priority {
+		return pq[i].value < pq[j].value
+	}
+	return pq[i].priority > pq[j].priority
+}
+
+func (pq PriorityQueue) Swap(i, j int) {
+	pq[i], pq[j] = pq[j], pq[i]
+	pq[i].index = i
+	pq[j].index = j
+}
+
+func (pq *PriorityQueue) Push(x interface{}) {
+	n := len(*pq)
+	item := x.(*Item)
+	item.index = n
+	*pq = append(*pq, item)
+}
+
+func (pq *PriorityQueue) Pop() interface{} {
+	old := *pq
+	n := len(old)
+	item := old[n-1]
+	old[n-1] = nil  // avoid memory leak
+	item.index = -1 // for safety
+	*pq = old[0 : n-1]
+	return item
+}
+
+func topKFrequent(words []string, k int) []string {
+	frequentMap := map[string]int{}
+	// Preprocess data
+	lenUniqueWords := 0
+	for _, word := range words {
+		if frequentMap[word] == 0 {
+			lenUniqueWords++
+		}
+		frequentMap[word]++
+	}
+
+	pq := make(PriorityQueue, lenUniqueWords)
+	i := 0
+	for value, priority := range frequentMap {
+		pq[i] = &Item{
+			value:    value,
+			priority: priority,
+			index:    i,
+		}
+		i++
+	}
+
+	heap.Init(&pq)
+
+	var resp []string
+	// Take the k items out; they arrive in decreasing priority order.
+	for j := 0; j < k; j++ {
+		item := heap.Pop(&pq).(*Item)
+		resp = append(resp, item.value)
+	}
+
+	return resp
+}
+
+func backspaceCompare(s1, s2 string) bool {
+	return preprocessBackspace(s1) == preprocessBackspace(s2)
+}
+
+func preprocessBackspace(s2 string) string {
+	for i := 0; i < len(s2); i++ {
+		if s2[i] == '#' {
+			if i == 0 {
+				s2 = s2[i+1:]
+			} else {
+				s2 = s2[:i-1] + s2[i+1:]
+			}
+
+			i = -1
+		}
+	}
+	return s2
 }
 
 // func numEquivDominoPairs(dominoes [][]int) int {
@@ -231,6 +489,60 @@ func main() {
 
 // 	return res
 // }
+
+func getMaximumGold(grid [][]int) int {
+	maxSoFar := 0
+	for i := 0; i < len(grid); i++ {
+		for j := 0; j < len(grid[i]); j++ {
+			if grid[i][j] > 0 {
+				m := map[string]bool{}
+				m[getKey(i, j)] = true
+				maxSoFar = int(math.Max(float64(maxSoFar), float64(dfsGetGold(grid, m, i, j, len(grid), len(grid[i]), grid[i][j]))))
+			}
+		}
+	}
+	return maxSoFar
+}
+
+func getKey(i, j int) string {
+	return strconv.Itoa(i) + strconv.Itoa(j)
+}
+
+func dfsGetGold(grid [][]int, visited map[string]bool, i, j, row, col, sum int) int {
+	toVisit := [][]int{}
+	maxSoFar := sum
+	// up
+	if i > 0 {
+		toVisit = append(toVisit, []int{i - 1, j})
+	}
+
+	//down
+	if i < row-1 {
+		toVisit = append(toVisit, []int{i + 1, j})
+	}
+
+	// left
+	if j > 0 {
+		toVisit = append(toVisit, []int{i, j - 1})
+	}
+
+	// right
+	if j < col-1 {
+		toVisit = append(toVisit, []int{i, j + 1})
+	}
+
+	for _, arr := range toVisit {
+		if grid[arr[0]][arr[1]] > 0 {
+			if !visited[getKey(arr[0], arr[1])] {
+				curSum := grid[arr[0]][arr[1]] + sum
+				visited[getKey(arr[0], arr[1])] = true
+				maxSoFar = int(math.Max(float64(maxSoFar), float64(dfsGetGold(grid, visited, arr[0], arr[1], row, col, curSum))))
+				visited[getKey(arr[0], arr[1])] = false
+			}
+		}
+	}
+	return maxSoFar
+}
 
 func checkPossibility(nums []int) bool {
 	if len(nums) < 2 {
