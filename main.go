@@ -244,7 +244,38 @@ func main() {
 	// availableFrom := time.Unix(tvailableFrom, 0)
 	// log.Println(availableFrom)
 	// log.Println(availableFrom.Hour()*60*60 + availableFrom.Minute()*60 + availableFrom.Second())
-	log.Println(leftMostColumnWithOne([]int{0, 1, 1, 1}))
+	//log.Println(leftMostColumnWithOne([]int{0, 1, 1, 1}))
+
+	root := &TreeNode{Val: 10}
+	root.Left = &TreeNode{Val: 5}
+	root.Left.Left = &TreeNode{Val: 3}
+	root.Left.Right = &TreeNode{Val: 7}
+	root.Right = &TreeNode{Val: 15}
+	root.Right.Right = &TreeNode{Val: 18}
+	log.Print(rangeSumBST(root, 7, 15))
+}
+
+func rangeSumBST(root *TreeNode, L int, R int) int {
+	res := 0
+	recur(root, L, R, &res)
+	return res
+}
+
+func recur(root *TreeNode, L int, R int, curSum *int) {
+	if root == nil {
+		return
+	}
+	if root.Val <= R && root.Val >= L {
+		*curSum += root.Val
+	} else if root.Val < L {
+		recur(root.Right, L, R, curSum)
+		return
+	} else if root.Val > R {
+		recur(root.Left, L, R, curSum)
+		return
+	}
+	recur(root.Left, L, R, curSum)
+	recur(root.Right, L, R, curSum)
 }
 
 func leftMostColumnWithOne(nums []int) int {
