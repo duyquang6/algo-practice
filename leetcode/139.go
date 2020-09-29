@@ -1,9 +1,7 @@
 package leetcode
 
 func wordBreak(s string, wordDict []string) bool {
-
 	wordmap := map[string]bool{}
-
 	for _, v := range wordDict {
 		wordmap[v] = true
 	}
@@ -23,6 +21,5 @@ func wordBreak(s string, wordDict []string) bool {
 		}
 		se++
 	}
-
 	return dp[len(dp)-1] == len(s)
 }

@@ -246,13 +246,17 @@ func main() {
 	// log.Println(availableFrom.Hour()*60*60 + availableFrom.Minute()*60 + availableFrom.Second())
 	//log.Println(leftMostColumnWithOne([]int{0, 1, 1, 1}))
 
-	root := &TreeNode{Val: 10}
-	root.Left = &TreeNode{Val: 5}
-	root.Left.Left = &TreeNode{Val: 3}
-	root.Left.Right = &TreeNode{Val: 7}
-	root.Right = &TreeNode{Val: 15}
-	root.Right.Right = &TreeNode{Val: 18}
-	log.Print(rangeSumBST(root, 7, 15))
+	// root := &TreeNode{Val: 10}
+	// root.Left = &TreeNode{Val: 5}
+	// root.Left.Left = &TreeNode{Val: 3}
+	// root.Left.Right = &TreeNode{Val: 7}
+	// root.Right = &TreeNode{Val: 15}
+	// root.Right.Right = &TreeNode{Val: 18}
+	// log.Print(rangeSumBST(root, 7, 15))
+
+	// leetcode.MinRemoveToMakeValid("a)b(c)d")
+	// leetcode.MinRemoveToMakeValid("lee(t(c)o)de)")
+	// leetcode.MinRemoveToMakeValid("a)b(c)d")
 }
 
 func rangeSumBST(root *TreeNode, L int, R int) int {
