@@ -257,6 +257,9 @@ func main() {
 	// leetcode.MinRemoveToMakeValid("a)b(c)d")
 	// leetcode.MinRemoveToMakeValid("lee(t(c)o)de)")
 	// leetcode.MinRemoveToMakeValid("a)b(c)d")
+	// leetcode.EvalRPN([]string{"2", "1", "+", "3", "*"})
+	// leetcode.EvalRPN([]string{"4", "13", "5", "/", "+"})
+	// leetcode.EvalRPN([]string{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"})
 }
 
 func rangeSumBST(root *TreeNode, L int, R int) int {
