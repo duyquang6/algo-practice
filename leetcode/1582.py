@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/special-positions-in-a-binary-matrix/
 from typing import List
 class Solution:
     def numSpecial(self, mat: List[List[int]]) -> int:

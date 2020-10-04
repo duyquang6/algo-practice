@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/word-break/
 package leetcode
 
 func wordBreak(s string, wordDict []string) bool {
