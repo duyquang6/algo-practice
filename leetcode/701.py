@@ -6,7 +6,7 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-        
+
 class Solution:
     def insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:
         if not root:
@@ -16,5 +16,3 @@ class Solution:
         else:
             root.right = self.insertIntoBST(root.right, val)
         return root
-        
-            
