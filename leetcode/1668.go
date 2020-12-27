@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/maximum-repeating-substring/
 package leetcode
 
 import (

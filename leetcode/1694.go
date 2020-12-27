@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/count-of-matches-in-tournament/
 package leetcode
 
 func numberOfMatches(n int) int {

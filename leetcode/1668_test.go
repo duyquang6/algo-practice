@@ -13,27 +13,27 @@ func Test_maxRepeating(t *testing.T) {
 		want int
 	}{
 		// TODO: Add test cases.
-		// {
-		// 	args: args{
-		// 		sequence: "ababc",
-		// 		word:     "ab",
-		// 	},
-		// 	want: 2,
-		// },
-		// {
-		// 	args: args{
-		// 		sequence: "ababc",
-		// 		word:     "ba",
-		// 	},
-		// 	want: 1,
-		// },
-		// {
-		// 	args: args{
-		// 		sequence: "ababc",
-		// 		word:     "ac",
-		// 	},
-		// 	want: 0,
-		// },
+		{
+			args: args{
+				sequence: "ababc",
+				word:     "ab",
+			},
+			want: 2,
+		},
+		{
+			args: args{
+				sequence: "ababc",
+				word:     "ba",
+			},
+			want: 1,
+		},
+		{
+			args: args{
+				sequence: "ababc",
+				word:     "ac",
+			},
+			want: 0,
+		},
 		{
 			args: args{
 				sequence: "aaabaaaabaaabaaaabaaaabaaaabaaaaba",
