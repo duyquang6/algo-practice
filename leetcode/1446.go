@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/consecutive-characters/
 package leetcode
 
 func maxPower(s string) int {

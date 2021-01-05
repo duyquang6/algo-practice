@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/check-array-formation-through-concatenation/
 package leetcode
 
 func canFormArray(arr []int, pieces [][]int) bool {
