@@ -1,18 +1,18 @@
 class Solution:
     def solve(self, arr):
         from functools import lru_cache
-        res = 0
 
         @lru_cache(None)
-        def helper(n):
+        def dp(n):
             res = 1
-            for i in range(n - 1, -1, -1):
-                if arr[i] < arr[n]:
-                    res = max(res, 1 + helper(i))
+            for k in range(n):
+                if arr[n] > arr[k]:
+                    res = max(res, dp(k) + 1)
             return res
+
         res = 0
         for i in range(len(arr)):
-            res = max(res, helper(i))
+            res = max(res, dp(i))
         return res
 
 
