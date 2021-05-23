@@ -1,5 +1,3 @@
-import scala.+:
-
 object Solution extends App {
     def subsetXORSum(nums: Array[Int]): Int = {
         var (i, j) = (0, nums.length - 1)
@@ -55,5 +53,31 @@ object Solution extends App {
             acc
         }.zipWithIndex.maxBy(_._1)._2
     }
+    
+    def arraySign(nums: Array[Int]): Int = {
+      nums.map{ x => 
+        x match {
+          case 0 => 0
+          case v if v > 0 => 1
+          case v if v < 0 => -1
+        }
+      }.reduce(_ * _)
+    }
+
+    def countPoints(points: Array[Array[Int]], queries: Array[Array[Int]]): Array[Int] = {
+      queries.map(query => {
+        val (x0, y0, radius) = (query(0), query(1), query(2)) 
+        
+        points.foldLeft(0){ (acc, point) =>
+          val (x,y) = (point(0), point(1))
+          if ((x - x0) * (x - x0) + (y-y0) * (y-y0) <= radius*radius)  
+            acc + 1
+          else 
+            acc
+        }
+      })
+    }
+
+    
 }
 

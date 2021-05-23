@@ -1,0 +1,396 @@
+[0m2021.05.23 08:51:13 INFO  Started: Metals version 0.10.2 in workspace '/Users/linguyen/self-project/ds-algo-pratice/scala-practice' for client coc.nvim 0.0.80.[0m
+[0m2021.05.23 08:51:14 INFO  time: initialize in 0.37s[0m
+[0m2021.05.23 08:51:14 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.05.23 08:51:14 WARN  no build target for: /Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7385062388123102478/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7385062388123102478/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7385062388123102478/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 08:51:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 08:51:15 INFO  time: Connected to build server in 0.52s[0m
+[0m2021.05.23 08:51:15 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.05.23 08:51:16 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.05.23 08:51:17 ERROR Empty build targets. Expected at least one build target identifier.[0m
+[0m2021.05.23 08:51:17 ERROR Empty build targets. Expected at least one build target identifier.[0m
+[0m2021.05.23 08:51:17 ERROR Empty build targets. Expected at least one build target identifier.[0m
+[0m2021.05.23 08:51:18 INFO  running '/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/metals748456947137320327/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.05.23 08:51:20 INFO  time: indexed workspace in 3.07s[0m
+[0m2021.05.23 08:51:20 WARN  no build target for: /Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala[0m
+[0m2021.05.23 08:51:20 INFO  [info] welcome to sbt 1.5.2 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.05.23 08:51:20 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.05.23 08:51:20 INFO  [info] loading settings for project global-plugins from build.sbt ...[0m
+[0m2021.05.23 08:51:21 INFO  [info] loading global plugins from /Users/linguyen/.sbt/1.0/plugins[0m
+[0m2021.05.23 08:51:23 INFO  [info] loading settings for project scala-practice-build-build from metals.sbt ...[0m
+[0m2021.05.23 08:51:23 INFO  [info] loading project definition from /Users/linguyen/self-project/ds-algo-pratice/scala-practice/project/project[0m
+[0m2021.05.23 08:51:23 INFO  [warn] .env file not found (fileName=.env), no .env environment configured.[0m
+[0m2021.05.23 08:51:24 INFO  [info] loading settings for project scala-practice-build from metals.sbt ...[0m
+[0m2021.05.23 08:51:24 INFO  [info] loading project definition from /Users/linguyen/self-project/ds-algo-pratice/scala-practice/project[0m
+[0m2021.05.23 08:51:33 INFO  [success] Generated .bloop/scala-practice-build.json[0m
+[0m2021.05.23 08:51:33 INFO  [success] Total time: 8 s, completed May 23, 2021 8:51:33 AM[0m
+[0m2021.05.23 08:51:33 INFO  [warn] .env file not found (fileName=.env), no .env environment configured.[0m
+[0m2021.05.23 08:51:34 INFO  [info] loading settings for project scala-practice from build.sbt ...[0m
+[0m2021.05.23 08:51:34 INFO  [info] set current project to scala-practice (in build file:/Users/linguyen/self-project/ds-algo-pratice/scala-practice/)[0m
+[0m2021.05.23 08:51:34 INFO  [warn] .env file not found (fileName=.env), no .env environment configured.[0m
+[0m2021.05.23 08:51:40 INFO  [success] Generated .bloop/scala-practice.json[0m
+[0m2021.05.23 08:51:40 INFO  [success] Generated .bloop/scala-practice-test.json[0m
+[0m2021.05.23 08:51:40 INFO  [success] Total time: 6 s, completed May 23, 2021 8:51:40 AM[0m
+[0m2021.05.23 08:51:40 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.05.23 08:51:40 INFO  time: ran 'sbt bloopInstall' in 21s[0m
+[0m2021.05.23 08:51:40 INFO  Disconnecting from Bloop session...[0m
+[0m2021.05.23 08:51:40 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.05.23 08:51:40 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7209115947264455543/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m[32m[D][0m Loading 2 projects from '/Users/linguyen/self-project/ds-algo-pratice/scala-practice/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/linguyen/self-project/ds-algo-pratice/scala-practice/.bloop/scala-practice.json'
+[0m[32m[D][0m Loading project from '/Users/linguyen/self-project/ds-algo-pratice/scala-practice/.bloop/scala-practice-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.13.
+[0m[32m[D][0m   => /Users/linguyen/.sbt/boot/scala-2.12.13/lib/scala-compiler.jar
+[0m[32m[D][0m   => /Users/linguyen/.sbt/boot/scala-2.12.13/lib/scala-library.jar
+[0m[32m[D][0m   => /Users/linguyen/.sbt/boot/scala-2.12.13/lib/scala-reflect.jar
+[0m[32m[D][0m   => /Users/linguyen/.sbt/boot/scala-2.12.13/lib/scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7209115947264455543/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7209115947264455543/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 08:51:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 08:51:46 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher6750651314972085870/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher6750651314972085870/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher6750651314972085870/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 08:51:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 08:51:46 INFO  time: Connected to build server in 5.94s[0m
+[0m2021.05.23 08:51:46 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.05.23 08:51:48 INFO  time: indexed workspace in 1.95s[0m
+[0m2021.05.23 08:51:48 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 08:51:59 INFO  compiling scala-practice-test (1 scala source)[0m
+[0m2021.05.23 08:51:59 INFO  time: compiled scala-practice in 10s[0m
+[0m2021.05.23 08:51:59 INFO  time: compiled scala-practice-test in 0.46s[0m
+May 23, 2021 8:59:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 42
+[0m2021.05.23 08:59:17 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 08:59:19 INFO  time: compiled scala-practice in 1.2s[0m
+May 23, 2021 8:59:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 54
+May 23, 2021 8:59:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 61
+May 23, 2021 9:00:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 68
+[0m2021.05.23 09:00:02 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:00:03 INFO  time: compiled scala-practice in 1.12s[0m
+May 23, 2021 9:02:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 103
+May 23, 2021 9:03:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 108
+May 23, 2021 9:03:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 110
+May 23, 2021 9:04:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 113
+[0m2021.05.23 09:04:09 INFO  compiling scala-practice-test (1 scala source)[0m
+[0m2021.05.23 09:04:09 INFO  time: compiled scala-practice-test in 0.21s[0m
+[0m2021.05.23 09:04:48 INFO  compiling scala-practice-test (1 scala source)[0m
+[0m2021.05.23 09:04:48 INFO  time: compiled scala-practice-test in 0.67s[0m
+May 23, 2021 9:11:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 124
+May 23, 2021 9:11:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 133
+May 23, 2021 9:11:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 140
+May 23, 2021 9:11:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 147
+May 23, 2021 9:11:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 149
+May 23, 2021 9:11:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 153
+May 23, 2021 9:12:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 155
+May 23, 2021 9:12:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 156
+[0m2021.05.23 09:12:54 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:12:54 INFO  time: compiled scala-practice in 0.16s[0m
+May 23, 2021 9:13:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 169
+May 23, 2021 9:13:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 176
+May 23, 2021 9:13:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 183
+May 23, 2021 9:13:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 185
+May 23, 2021 9:13:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 187
+May 23, 2021 9:13:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 189
+May 23, 2021 9:13:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 196
+May 23, 2021 9:13:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 198
+May 23, 2021 9:13:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 199
+May 23, 2021 9:13:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 202
+May 23, 2021 9:13:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 204
+May 23, 2021 9:13:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 205
+May 23, 2021 9:13:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 212
+May 23, 2021 9:13:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 213
+May 23, 2021 9:13:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 214
+May 23, 2021 9:13:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 216
+[0m2021.05.23 09:13:34 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:13:34 INFO  time: compiled scala-practice in 0.14s[0m
+May 23, 2021 9:15:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 226
+May 23, 2021 9:15:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 231
+May 23, 2021 9:15:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 232
+May 23, 2021 9:15:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 233
+May 23, 2021 9:16:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 235
+May 23, 2021 9:16:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 239
+May 23, 2021 9:16:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 242
+[0m2021.05.23 09:17:24 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:17:24 INFO  time: compiled scala-practice in 0.15s[0m
+May 23, 2021 9:23:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 265
+May 23, 2021 9:24:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 268
+May 23, 2021 9:24:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 272
+May 23, 2021 9:24:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 273
+May 23, 2021 9:24:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 275
+May 23, 2021 9:24:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 284
+[0m2021.05.23 09:25:01 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:25:01 INFO  time: compiled scala-practice in 0.15s[0m
+May 23, 2021 9:25:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 292
+May 23, 2021 9:25:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 294
+May 23, 2021 9:25:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 298
+May 23, 2021 9:26:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 309
+May 23, 2021 9:26:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 312
+May 23, 2021 9:26:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 319
+May 23, 2021 9:26:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 320
+May 23, 2021 9:26:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 326
+May 23, 2021 9:27:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 332
+May 23, 2021 9:27:30 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+[0m2021.05.23 09:28:08 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:28:08 INFO  time: compiled scala-practice in 0.15s[0m
+May 23, 2021 9:28:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 362
+[0m2021.05.23 09:28:50 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:28:50 INFO  time: compiled scala-practice in 67ms[0m
+[0m2021.05.23 09:29:20 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:29:20 INFO  time: compiled scala-practice in 54ms[0m
+[0m2021.05.23 09:29:57 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:29:57 INFO  time: compiled scala-practice in 0.14s[0m
+[0m2021.05.23 09:30:02 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:30:02 INFO  time: compiled scala-practice in 0.14s[0m
+May 23, 2021 9:31:47 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+something's wrong: no file:///Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala in Array[<error>]RangePosition(file:///Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala, 1862, 1862, 1877)
+May 23, 2021 9:31:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 384
+[0m2021.05.23 09:31:50 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:31:50 INFO  time: compiled scala-practice in 53ms[0m
+[0m2021.05.23 09:32:11 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:32:11 INFO  time: compiled scala-practice in 0.16s[0m
+[0m2021.05.23 09:33:57 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:33:57 INFO  time: compiled scala-practice in 53ms[0m
+[0m2021.05.23 09:34:04 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:34:04 INFO  time: compiled scala-practice in 0.14s[0m
+May 23, 2021 9:34:28 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+something's wrong: no file:///Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala in Array[<error>]RangePosition(file:///Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala, 1861, 1861, 1876)
+May 23, 2021 9:34:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 413
+[0m2021.05.23 09:34:31 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:34:31 INFO  time: compiled scala-practice in 45ms[0m
+[0m2021.05.23 09:36:01 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:36:01 INFO  time: compiled scala-practice in 47ms[0m
+[0m2021.05.23 09:36:07 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:36:07 INFO  time: compiled scala-practice in 0.14s[0m
+[0m2021.05.23 09:36:20 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:36:20 INFO  time: compiled scala-practice in 0.13s[0m
+May 23, 2021 9:37:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 429
+May 23, 2021 9:37:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 432
+May 23, 2021 9:37:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 434
+May 23, 2021 9:37:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 436
+May 23, 2021 9:37:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 440
+May 23, 2021 9:37:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 442
+May 23, 2021 9:37:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 444
+May 23, 2021 9:37:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 446
+May 23, 2021 9:37:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 450
+[0m2021.05.23 09:37:27 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:37:27 INFO  time: compiled scala-practice in 0.12s[0m
+May 23, 2021 9:38:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 457
+May 23, 2021 9:38:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 459
+May 23, 2021 9:38:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 461
+May 23, 2021 9:38:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 465
+May 23, 2021 9:38:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 467
+May 23, 2021 9:38:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 470
+[0m2021.05.23 09:38:28 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:38:28 INFO  time: compiled scala-practice in 0.13s[0m
+[0m2021.05.23 09:45:04 INFO  compiling scala-practice (1 scala source)[0m
+[0m2021.05.23 09:45:04 INFO  time: compiled scala-practice in 0.98s[0m
+[0m2021.05.23 09:47:21 INFO No more data in the server stdin, exiting... 
+No more data in the server stdin, exiting...Shut down connection with build server.
+[0m
+[0mNo more data in the server stdin, exiting...2021.05.23 09:47:21
+ No more data in the server stdin, exiting...INFO 
+ Shut down connection with build server.No more data in the client stdin, exiting...[0m
+
+No more data in the client stdin, exiting...
+[0m2021.05.23 09:47:37 INFO  Started: Metals version 0.10.2 in workspace '/Users/linguyen/self-project/ds-algo-pratice/scala-practice' for client coc.nvim 0.0.80.[0m
+[0m2021.05.23 09:47:37 INFO  time: initialize in 0.35s[0m
+[0m2021.05.23 09:47:37 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher4343261290870163859/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.05.23 09:47:37 WARN  no build target for: /Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala[0m
+[0m2021.05.23 09:47:37 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher4343261290870163859/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher4343261290870163859/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 09:47:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 09:47:38 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher6720086374792717516/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher6720086374792717516/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher6720086374792717516/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 09:47:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 09:47:38 INFO  time: Connected to build server in 0.37s[0m
+[0m2021.05.23 09:47:38 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.05.23 09:47:39 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.05.23 09:47:42 INFO  time: indexed workspace in 3.47s[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.23 09:50:27 INFO  Shut down connection with build server.[0m
+[0m2021.05.23 09:50:27 INFO  No more data in the client stdin, exiting...Shut down connection with build server.
+[0m
+No more data in the client stdin, exiting...
+[0m2021.05.23 09:51:19 INFO  Started: Metals version 0.10.2 in workspace '/Users/linguyen/self-project/ds-algo-pratice/scala-practice' for client coc.nvim 0.0.80.[0m
+[0m2021.05.23 09:51:19 INFO  time: initialize in 0.33s[0m
+[0m2021.05.23 09:51:23 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher1807352703784571100/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.05.23 09:51:23 WARN  no build target for: /Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala[0m
+[0m2021.05.23 09:51:23 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher1807352703784571100/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher1807352703784571100/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 09:51:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 09:51:24 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher4937652479036229576/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher4937652479036229576/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher4937652479036229576/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 09:51:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 09:51:24 INFO  time: Connected to build server in 0.4s[0m
+[0m2021.05.23 09:51:24 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.05.23 09:51:25 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.05.23 09:51:28 INFO  time: indexed workspace in 3.48s[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.23 09:51:37 INFO  Shut down connection with build server.[0m
+[0m2021.05.23 09:51:37 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.05.23 09:51:46 INFO  Started: Metals version 0.10.2 in workspace '/Users/linguyen/self-project/ds-algo-pratice/scala-practice' for client coc.nvim 0.0.80.[0m
+[0m2021.05.23 09:51:46 INFO  time: initialize in 0.37s[0m
+[0m2021.05.23 09:51:50 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7338560623499285368/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.05.23 09:51:50 WARN  no build target for: /Users/linguyen/self-project/ds-algo-pratice/scala-practice/src/main/scala/Solution.scala[0m
+[0m2021.05.23 09:51:50 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7338560623499285368/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher7338560623499285368/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 09:51:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 09:51:50 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher1388193475601852326/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher1388193475601852326/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/cd/8x925_7n5q73j9gc1t51lwqh0000gp/T/bsp-launcher1388193475601852326/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.23 09:51:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/linguyen/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.05.23 09:51:50 INFO  time: Connected to build server in 0.31s[0m
+[0m2021.05.23 09:51:50 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.05.23 09:51:51 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.05.23 09:51:55 INFO  time: indexed workspace in 3.42s[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.23 09:52:10 INFO  Shut down connection with build server.[0m
+[0m2021.05.23 09:52:10 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
