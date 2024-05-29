@@ -24,7 +24,7 @@ func main() {
 	//
 	//hello2(hello)
 
-	//log.Println(removeDuplicates([]int{1, 1, 1,1, 2, 2, 3}))
+	// log.Println(removeDuplicates([]int{1, 1, 1,1, 2, 2, 3}))
 	// log.Println([]int{-1, 2, 1, -4}, 1)
 	// log.Println(searchRange([]int{5, 7, 7, 8, 8, 10}, 8))
 
@@ -231,7 +231,6 @@ func maxSumContiguousArray(nums []int, size int) int {
 }
 
 func searchRange(nums []int, target int) []int {
-
 	return []int{}
 }
 
@@ -269,7 +268,6 @@ func inOrder(root *TreeNode, stack *list.List) {
 				stack.PushFront(e.Value.(*TreeNode).Right)
 			}
 		}
-
 	}
 }
 
