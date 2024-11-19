@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"slices"
 
 	"github.com/emirpasic/gods/v2/queues/priorityqueue"
 )
@@ -44,10 +44,6 @@ func primMST(n int, edges [][]int) [][]int {
 		adjList[e[1]] = append(adjList[e[0]], [2]int{e[0], e[2]})
 	}
 
-	for i := range adjList {
-		fmt.Println("node", i, "neighs", adjList[i])
-	}
-
 	visited := make([]bool, n)
 	pq := priorityqueue.NewWith(func(x, y [3]int) int {
 		return x[0] - y[0]
@@ -82,6 +78,57 @@ func primMST(n int, edges [][]int) [][]int {
 }
 
 func kruskalMST(n int, edges [][]int) [][]int {
-	// TBU
-	return nil
+	slices.SortFunc(edges, func(a, b []int) int {
+		return a[2] - b[2]
+	})
+
+	sizes := make([]int, n)
+	pars := make([]int, n)
+	for i := range n {
+		pars[i] = i
+		sizes[i] = 1
+	}
+
+	res := [][]int{}
+	for _, edge := range edges {
+		if find(pars, edge[0]) == find(pars, edge[1]) {
+			continue
+		}
+		union(pars, sizes, edge[0], edge[1])
+		res = append(res, []int{edge[0], edge[1], edge[2]})
+	}
+
+	return res
+}
+
+func union(pars, sizes []int, a, b int) {
+	ra, rb := find(pars, a), find(pars, b)
+	if ra == rb {
+		return
+	}
+
+	if sizes[ra] > sizes[rb] {
+		// merge pb to pa
+		sizes[ra] += sizes[rb]
+		for pars[a] != ra {
+			pars[a], a = rb, pars[a]
+		}
+		pars[ra] = rb
+		return
+	}
+
+	// merge pa to pb
+	sizes[rb] += sizes[ra]
+	for pars[b] != rb {
+		pars[b], b = ra, pars[b]
+	}
+	pars[rb] = ra
+}
+
+func find(pars []int, a int) int {
+	for pa := pars[a]; pa != a; {
+		a = pa
+		pa = pars[pa]
+	}
+	return a
 }
